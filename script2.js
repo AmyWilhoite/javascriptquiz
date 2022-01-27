@@ -1,4 +1,4 @@
-console.log("this page works!!")
+console.log("this page works!! 2nd Method to achieve this homework!")
 console.log("Im trying to add a method to this constructor function that carries out the function of checking answer then loop through the question - my method may not be best. Im committed!")
 
 // define variables for display on HTML using getElement or querySelector
