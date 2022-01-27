@@ -1,4 +1,5 @@
 console.log("this page works!!")
+console.log("Im trying to add a method to this constructor function that carries out the function of checking answer then loop through the question - my method may not be best. Im committed!")
 
 // define variables for display on HTML using getElement or querySelector
 var timerEl = document.getElementById("timer");
@@ -41,7 +42,15 @@ answerEl3.textContent = question1.answers[2];
 answerEl4.textContent = question1.answers[3];
 
 var question2 = new QuestionFactory("Which of the following is a string?", ["cat", "25", "true or false", "Null"], "cat");
+console.log(question2.questions);
+console.log(question2.answers);
+console.log(question2.correctAns);
+
 var question3 = new QuestionFactory("Which of the following is a loop:", ["While", "Click", "Return", "All of the above"], "While" );
+console.log(question3.questions);
+console.log(question3.answers);
+console.log(question3.correctAns);
+
 
 // Version 1 function for constructor object attempted: listener for if answer click is correct answer, correct + 5 pts to score otherwise -5 seconds to timer
 // To Do: this sort of works but not the way it's supposed to
