@@ -10,3 +10,7 @@
 *When either all questions are answered or the timer reaches the game is over
 *When the game is over I can save my initials and my score
 *Logs High Score by User
+
+## Preview
+## Links
+
