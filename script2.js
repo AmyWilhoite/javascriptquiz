@@ -25,7 +25,7 @@ function QuestionFactory (questions, answers, correctAns){
 
 
 // created objects that contain all the data for each question using the construction model
-// so i could easily create or change out questions in the future 
+// so i could easily create or change out questions in the future
 
 var question1 = new QuestionFactory("An API interacts with programs in:", ["browsers", "scripts", "platforms", "all of the above"], "browser");
 // i  wanted to know if this formula is working
@@ -33,6 +33,7 @@ console.log(question1.questions);
 console.log(question1.answers);
 console.log(question1.correctAns);
 
+// this is how i got display in browser, i'd like to loop through questions once fully developed construction method applies to that section
 questionEl.textContent = "Question 1: "+ question1.questions;
 answerEl1.textContent = question1.answers[0];
 answerEl2.textContent = question1.answers[1];
@@ -42,7 +43,7 @@ answerEl4.textContent = question1.answers[3];
 var question2 = new QuestionFactory("Which of the following is a string?", ["cat", "25", "true or false", "Null"], "cat");
 var question3 = new QuestionFactory("Which of the following is a loop:", ["While", "Click", "Return", "All of the above"], "While" );
 
-// Added event listener for if answer click is correct answer, correct + 5 pts to score otherwise -5 seconds to timer
+// Version 1 function for constructor object attempted: listener for if answer click is correct answer, correct + 5 pts to score otherwise -5 seconds to timer
 // To Do: this sort of works but not the way it's supposed to
 // answerEl.addEventListener("click", function(){
 //     if (this.answers === this.correctAns) {
@@ -54,7 +55,7 @@ var question3 = new QuestionFactory("Which of the following is a loop:", ["While
 //     }
 // })
 
-// another try at this correct answer return function
+// Version 2 function for constructor object attempted: function for listening to click then performing checkedAnser at this correct answer return function
 // add listener to section of HTML defined as answerEl
 answerEl.addEventListener("click", function(event){
     // add variable for event "click and the target button item"
@@ -68,17 +69,18 @@ answerEl.addEventListener("click", function(event){
         returnAns.textContent(innerHTML)("INCORRECT - lose 5 seconds")
         timerEl = timerInterval -5;
     }
+    // return answer in the proper section
     clickedAns.returnAns;
 });
 
 
-// To-Do: I was hoping this constructor function including a method would help me loop question1,2,3 with data flowing to proper locations on html
-    // set onclick attribute to all available options
+// To-Do: Function to Loop questions 1,2,3 (constructor function once method developed if possible)
+    // set onclick attribute to all available options looking at this type of option
     // for(i=0; i < option.length; i++){
     //     option[i].setAttribute("onclick", "optionSelected(this)");
 
 
-// To Do: Write a formula to score and store user high score
+// To Do: Write a formula to score and store user high score but was thinking maybe i can incorporate this in my construction function instead
 // for (var i =0; i < numberofAnswers; i++) {
 // document.querySelectorAll(".bstyle")[i].addEventListener("click", function(){
 //      if (userInput === correctAns);
@@ -88,7 +90,7 @@ answerEl.addEventListener("click", function(event){
 
 // }
 
-// Timer Section 
+// Timer Section - works but no deductions because i dont have my listener correct yet
 // To-do: Timer deducts time when answer is incorrect
 
 // start time
@@ -108,7 +110,7 @@ var timerInterval = setInterval(function() {
 }, 1000);
 
 
-// // subtractTime.addEventListener("click", function() {
+// formula for exploring deductions from the timer with function subtractTime.addEventListener("click", function() {
 //     if (count > 0) {
 //       count--;
 //       counter.textContent = count;
@@ -116,8 +118,4 @@ var timerInterval = setInterval(function() {
 //     }
 //   });
 
-
-// deductions by 5 seconds if incorrect 
-// document.getElementById(id).onclick = function(){code}
-
-// score i believe local storage / log high score
+// To-do: Store score i believe local storage / log high score

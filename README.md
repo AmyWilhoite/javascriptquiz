@@ -1,7 +1,7 @@
 # javascriptquiz
 04 Homework - Javascript Quiz
 ## OVERVIEW
- This is a timed coding quiz with multiple-choice questions. This app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript code with a responsive user interface. 
+ This is a timed coding quiz with multiple-choice questions. This app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript code with an attempted responsive user interface. 
  
 *Click the start button
 *Timer Starts
@@ -12,5 +12,8 @@
 *Logs High Score by User
 
 ## Preview
-## Links
+![Preview](./preview.1.27.png)
 
+## Links
+Link: https://amywilhoite.github.io/javascriptquiz/ <br>
+Github: https://github.com/AmyWilhoite/javascriptquiz.git

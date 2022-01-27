@@ -1,3 +1,5 @@
+// ignore this file, this was my first attempt, maybe it would have been easier! 
+
 console.log("this page works!!")
 
 // what variables for questions 
