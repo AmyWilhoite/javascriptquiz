@@ -12,7 +12,7 @@
 *Logs High Score by User
 
 ## Preview
-![Preview](./preview.1.27.png)
+![Preview](./assets/preview.1.27.png)
 
 ## Links
 Link: https://amywilhoite.github.io/javascriptquiz/ <br>
